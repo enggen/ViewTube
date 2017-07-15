@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F45F92651F190CE800648671 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F92641F190CE800648671 /* MenuBar.swift */; };
+		F4E63AFE1F1A75B1002A5FD4 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E63AFD1F1A75B1002A5FD4 /* Video.swift */; };
 		F4EF844A1F16743700885460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF84491F16743700885460 /* AppDelegate.swift */; };
 		F4EF844C1F16743700885460 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF844B1F16743700885460 /* HomeController.swift */; };
 		F4EF84511F16743700885460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EF84501F16743700885460 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F45F92641F190CE800648671 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		F4E63AFD1F1A75B1002A5FD4 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		F4EF84461F16743700885460 /* ViewTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EF84491F16743700885460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EF844B1F16743700885460 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4E63AFC1F1A7549002A5FD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4E63AFD1F1A75B1002A5FD4 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4EF843D1F16743700885460 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		F4EF84481F16743700885460 /* ViewTube */ = {
 			isa = PBXGroup;
 			children = (
+				F4E63AFC1F1A7549002A5FD4 /* Model */,
 				F4F8EB881F1909DF0056750F /* View */,
 				F4F8EB8B1F190A4B0056750F /* Controller */,
 				F4F8EB851F1908940056750F /* Helpers */,
@@ -286,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4EF844C1F16743700885460 /* HomeController.swift in Sources */,
+				F4E63AFE1F1A75B1002A5FD4 /* Video.swift in Sources */,
 				F4F8EB8A1F190A010056750F /* VideoCell.swift in Sources */,
 				F4F8EB871F1908BC0056750F /* Extensions.swift in Sources */,
 				F4EF844A1F16743700885460 /* AppDelegate.swift in Sources */,
