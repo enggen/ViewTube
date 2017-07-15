@@ -1,4 +1,4 @@
 # ViewTube
 YouTube Clone App 
-Tt's just for educational purpose only
+It's just for educational purpose only
 
