@@ -37,6 +37,14 @@ class VideoCell: BaseCell {
             if let profileImageName = video?.channel?.profileImageName {
                 userProfileImageView.image = UIImage(named: profileImageName)
             }
+            
+            if let channelName = video?.channel?.name, let numberOfViews = video?.numberOfViews {
+                let numberFormatter = NumberFormatter()
+                numberFormatter.numberStyle = .decimal
+                let subtitleText = "\(channelName) • \(numberFormatter.string(from: numberOfViews)!) • 2 years ago"
+                subtitleTextView.text = subtitleText
+            }
+            
         }
     }
 
@@ -74,7 +82,7 @@ class VideoCell: BaseCell {
         return label
     }()
     
-    let subtitleTextView: UITextView = {
+    var subtitleTextView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints  = false
         //textView.backgroundColor = UIColor.red
