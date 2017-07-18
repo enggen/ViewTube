@@ -29,7 +29,14 @@ class VideoCell: BaseCell {
     var video: Video? {
         didSet {
             titleLabel.text = video?.title
-            thumbnailImageView.image = UIImage(named: (video?.thumbnailImageName)!)
+            
+            if let thumbnailImageName = video?.thumbnailImageName {
+                thumbnailImageView.image = UIImage(named: thumbnailImageName)
+            }
+            
+            if let profileImageName = video?.channel?.profileImageName {
+                userProfileImageView.image = UIImage(named: profileImageName)
+            }
         }
     }
 
